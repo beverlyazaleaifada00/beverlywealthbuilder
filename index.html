@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverly Wealth Builder - Membangun Kekayaan, Mewujudkan Impian Finansial Anda</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom styles for gradients or specific elements not easily done with Tailwind */
+        .hero-bg {
+            background-image: url('https://placehold.co/1920x1080/4A90E2/ffffff?text=Latar+Belakang+Hero'); /* Placeholder image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .gradient-overlay {
+            background: linear-gradient(to right, rgba(29, 78, 216, 0.8), rgba(6, 182, 212, 0.8));
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 fixed w-full z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-blue-700">Beverly Wealth Builder</div>
+            
+            <!-- Navigation Links (Hidden on small screens, shown as menu button) -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#beranda" class="text-gray-600 hover:text-blue-700 font-medium">Beranda</a>
+                <a href="#tentang-kami" class="text-gray-600 hover:text-blue-700 font-medium">Tentang Kami</a>
+                <a href="#layanan" class="text-gray-600 hover:text-blue-700 font-medium">Layanan</a>
+                <a href="#portofolio" class="text-gray-600 hover:text-blue-700 font-medium">Portofolio</a>
+                <a href="#edukasi" class="text-gray-600 hover:text-blue-700 font-medium">Edukasi</a>
+                <a href="#kontak" class="text-gray-600 hover:text-blue-700 font-medium">Kontak</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="#kontak" class="hidden md:block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition duration-300">
+                Konsultasi Gratis
+            </a>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden bg-white mt-4 rounded-lg shadow-lg hidden">
+            <nav class="flex flex-col space-y-2 py-4 px-6">
+                <a href="#beranda" class="text-gray-600 hover:text-blue-700 font-medium py-2">Beranda</a>
+                <a href="#tentang-kami" class="text-gray-600 hover:text-blue-700 font-medium py-2">Tentang Kami</a>
+                <a href="#layanan" class="text-gray-600 hover:text-blue-700 font-medium py-2">Layanan</a>
+                <a href="#portofolio" class="text-gray-600 hover:text-blue-700 font-medium py-2">Portofolio</a>
+                <a href="#edukasi" class="text-gray-600 hover:text-blue-700 font-medium py-2">Edukasi</a>
+                <a href="#kontak" class="text-gray-600 hover:text-blue-700 font-medium py-2">Kontak</a>
+                <a href="#kontak" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow-lg text-center transition duration-300">
+                    Konsultasi Gratis
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section id="beranda" class="hero-bg relative h-[60vh] md:h-[80vh] flex items-center justify-center text-white text-center">
+            <div class="gradient-overlay absolute inset-0"></div>
+            <div class="relative z-10 px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up">
+                    Wujudkan Kebebasan Finansial Anda dengan Beverly Wealth Builder.
+                </h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in delay-200">
+                    Kami menyediakan bimbingan ahli dan strategi investasi terbukti untuk membangun kekayaan Anda.
+                </p>
+                <a href="#kontak" class="bg-white text-blue-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-xl text-lg transition duration-300 transform hover:scale-105 animate-fade-in delay-400">
+                    Mulai Perjalanan Anda Sekarang
+                </a>
+            </div>
+        </section>
+
+        <!-- Bagian "Mengapa Memilih Kami?" -->
+        <section id="mengapa-kami" class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Mengapa Memilih Kami?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Keahlian Teruji -->
+                    <div class="bg-blue-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002.944 12c0 2.871.97 5.518 2.628 7.632L12 22.056l6.428-2.424A12.001 12.001 0 0021.056 12c0-2.871-.97-5.518-2.628-7.632z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Keahlian Teruji</h3>
+                        <p class="text-gray-600">Tim kami terdiri dari para ahli finansial dan properti dengan pengalaman bertahun-tahun di industri.</p>
+                    </div>
+                    <!-- Pendekatan Personal -->
+                    <div class="bg-blue-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 100-4m0 4a2 2 110-4m0 4v2m0-6V4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Pendekatan Personal</h3>
+                        <p class="text-gray-600">Kami merancang strategi yang disesuaikan dengan tujuan dan profil risiko unik Anda.</p>
+                    </div>
+                    <!-- Transparansi & Kepercayaan -->
+                    <div class="bg-blue-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002.944 12c0 2.871.97 5.518 2.628 7.632L12 22.056l6.428-2.424A12.001 12.001 0 0021.056 12c0-2.871-.97-5.518-2.628-7.632z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Transparansi & Kepercayaan</h3>
+                        <p class="text-gray-600">Kami berkomitmen pada komunikasi yang jujur dan transparan di setiap langkah.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian "Layanan Kami" -->
+        <section id="layanan" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Layanan Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Layanan 1: Konsultasi Keuangan -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-4">Konsultasi Keuangan</h3>
+                        <p class="text-gray-700 mb-6">Perencanaan keuangan komprehensif untuk mencapai tujuan jangka pendek dan panjang Anda, dari tabungan hingga pensiun.</p>
+                        <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">Pelajari Lebih Lanjut</a>
+                    </div>
+                    <!-- Layanan 2: Investasi Properti -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-4">Investasi Properti</h3>
+                        <p class="text-gray-700 mb-6">Temukan properti yang menjanjikan dengan potensi pertumbuhan nilai yang tinggi. Kami membimbing Anda dari pencarian hingga akuisisi.</p>
+                        <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">Pelajari Lebih Lanjut</a>
+                    </div>
+                    <!-- Layanan 3: Manajemen Portofolio -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-4">Manajemen Portofolio</h3>
+                        <p class="text-gray-700 mb-6">Optimalisasi portofolio investasi Anda untuk pertumbuhan maksimal dan risiko yang terkelola dengan baik. Kami pantau dan sesuaikan strategi Anda.</p>
+                        <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">Pelajari Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Testimonial -->
+        <section id="testimonial" class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Apa Kata Klien Kami?</h2>
+                <div class="max-w-3xl mx-auto bg-blue-50 p-8 rounded-xl shadow-lg">
+                    <p class="text-xl text-gray-700 italic mb-6">"Beverly Wealth Builder benar-benar mengubah pandangan saya tentang investasi. Dengan bimbingan mereka, saya berhasil mencapai tujuan finansial yang sebelumnya hanya impian!"</p>
+                    <div class="flex items-center justify-center space-x-4">
+                        <img src="https://placehold.co/80x80/cccccc/333333?text=Klien" alt="Foto Klien" class="w-16 h-16 rounded-full object-cover shadow-md">
+                        <div>
+                            <p class="font-semibold text-lg text-gray-800">Budi Santoso</p>
+                            <p class="text-gray-600">Pengusaha</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Anda bisa menambahkan lebih banyak testimonial di sini atau membuat slider JavaScript -->
+            </div>
+        </section>
+
+        <!-- Bagian "Edukasi & Sumber Daya" (Blog Preview) -->
+        <section id="edukasi" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Edukasi & Sumber Daya</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Artikel Blog 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/600x400/87CEEB/ffffff?text=Investasi+Properti" alt="Gambar Artikel 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">5 Tips Memulai Investasi Properti untuk Pemula</h3>
+                            <p class="text-gray-600 text-sm mb-4">Pelajari dasar-dasar investasi properti dan bagaimana meminimalkan risiko Anda.</p>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Baca Selengkapnya &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Artikel Blog 2 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/600x400/90EE90/ffffff?text=Perencanaan+Keuangan" alt="Gambar Artikel 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Strategi Perencanaan Keuangan Jangka Panjang</h3>
+                            <p class="text-gray-600 text-sm mb-4">Panduan lengkap untuk menyusun rencana keuangan yang kokoh untuk masa depan Anda.</p>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Baca Selengkapnya &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Artikel Blog 3 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/600x400/FFD700/ffffff?text=Manajemen+Risiko" alt="Gambar Artikel 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3">Memahami Risiko dalam Portofolio Investasi Anda</h3>
+                            <p class="text-gray-600 text-sm mb-4">Identifikasi dan kelola risiko investasi untuk mencapai pertumbuhan yang stabil.</p>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Baca Selengkapnya &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">Lihat Semua Artikel</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian CTA Akhir -->
+        <section id="kontak" class="py-16 bg-blue-700 text-white text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Siap Memulai Perjalanan Kekayaan Anda?</h2>
+                <p class="text-lg md:text-xl mb-8 opacity-90">
+                    Jadwalkan konsultasi gratis hari ini dan mari kita bangun masa depan finansial Anda bersama.
+                </p>
+                <a href="mailto:info@beverlywealthbuilder.com" class="bg-white text-blue-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-xl text-lg transition duration-300 transform hover:scale-105">
+                    Jadwalkan Konsultasi Gratis
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-6 md:px-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Kolom 1: Logo & Deskripsi -->
+            <div>
+                <div class="text-2xl font-bold text-blue-400 mb-4">Beverly Wealth Builder</div>
+                <p class="text-gray-400 text-sm">Mitra terpercaya Anda dalam membangun dan mengelola kekayaan untuk masa depan finansial yang cerah.</p>
+            </div>
+            <!-- Kolom 2: Tautan Navigasi -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#beranda" class="text-gray-400 hover:text-white transition duration-200">Beranda</a></li>
+                    <li><a href="#tentang-kami" class="text-gray-400 hover:text-white transition duration-200">Tentang Kami</a></li>
+                    <li><a href="#layanan" class="text-gray-400 hover:text-white transition duration-200">Layanan</a></li>
+                    <li><a href="#portofolio" class="text-gray-400 hover:text-white transition duration-200">Portofolio (Coming Soon)</a></li>
+                    <li><a href="#edukasi" class="text-gray-400 hover:text-white transition duration-200">Edukasi</a></li>
+                    <li><a href="#kontak" class="text-gray-400 hover:text-white transition duration-200">Kontak</a></li>
+                </ul>
+            </div>
+            <!-- Kolom 3: Informasi Kontak & Sosial Media -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Hubungi Kami</h3>
+                <p class="text-gray-400 text-sm mb-2">Email: info@beverlywealthbuilder.com</p>
+                <p class="text-gray-400 text-sm mb-2">Telepon: +62 812 3456 7890</p>
+                <p class="text-gray-400 text-sm mb-4">Alamat: Jl. Contoh No. 123, Jakarta, Indonesia</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C8.751 2 5.86 3.52 4 6.22V2h-2v20h2V9.78C5.86 7.48 8.751 6 12 6c3.249 0 6.14 1.48 8 3.78V2z" clip-rule="evenodd"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.866 8.163 6.84 9.49l-.02-1.72c-2.885-.812-4.99-3.525-4.99-6.77 0-3.98 3.22-7.2 7.2-7.2s7.2 3.22 7.2 7.2c0 3.245-2.105 5.958-4.99 6.77l-.02 1.72C19.134 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10zm-1 15.5V11h2v6.5zm0-8H13V7h-2z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-8">
+            &copy; 2025 Beverly Wealth Builder. Semua Hak Dilindungi.
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuBut
